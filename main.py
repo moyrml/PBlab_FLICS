@@ -12,20 +12,6 @@ gamma = 0
 fline = 1400
 Tline = 1.0/fline
 
-def G(Dij,im):
-    columns_correlation = []
-    col_cur=0.0
-
-    for y in range(im.shape[0]-1):
-        for x in range(im.shape[1]-1):
-            if x+Dij >= im.shape[1]:
-                continue
-            # this is a form of corrolation i came up with
-            col_cur = im[y,x]*im[y,x+Dij]
-        columns_correlation.append(col_cur)
-    # this averages the correlation of all columns 
-    return sum(columns_correlation)/len(columns_correlation)
-
 #integrates over two column
 def g2(x,l,tau,im):
     if x+l >= im.shape[1]:
