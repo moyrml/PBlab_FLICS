@@ -1,0 +1,10 @@
+ f_line 1000
+ dx 0.04
+ gamma 0
+ the scale bar denotes 3 um and takes 70x6 pixels
+ the image size is 234p squared
+ each pixel is 23.3 um in x direction
+lets assume the actual image took 30ms from top to bottom
+Tline of 1/1000
+Ny = 30e-3/ 1e-3 = 30 pixels?!?!?!?
+=> my fline is ~8 time higher!!
