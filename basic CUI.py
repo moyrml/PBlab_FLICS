@@ -1,7 +1,7 @@
 from __future__ import division
 
 import numpy as np
-from scipy import misc, signal
+from scipy import misc
 from matplotlib import pyplot as plt
 
 t_line = input('How long does it take to scan a row? ')
